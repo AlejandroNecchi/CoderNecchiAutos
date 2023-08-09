@@ -38,9 +38,11 @@ nav{
 }
 
 nav ul{
+    width: 100%;
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -52,8 +54,9 @@ nav ul a{
 }
 
 nav ul li{
-    padding: 20px;
+    padding: 30px;
 }
+
 /*modificar paddin a menos*/
 nav li a:hover{
     background-color: rgb(151, 169, 221);
@@ -138,7 +141,7 @@ footer{
 }
 
 /*
-Acá intenté hacer que los "botones" osea las imágenes de las redes sociales sean mas chicas a la hora de clickear pero no pude, necesitaría una class en las A HREF de cada imagen estoy casi seguro pero lo intenté y no hubo caso, si me lo podes corregir sería genial, gracias :D.
+Acá intenté hacer que los "botones" osea las imágenes de las redes sociales sean mas chicas a la hora de clickear pero no pude, necesitaría una class en las A HREF de cada imagen estoy casi seguro pero lo intenté y no hubo caso, si me podes dar una mano con esto sería genial, gracias :D.
 */
 
 .redesSocialesFooter{
@@ -165,3 +168,14 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
 .derechos{
     padding: 20px;
 }
+
+.autosIndex{
+    max-width: 100%;
+}
+
+.autosIndexImg{
+    width: 250px;
+    height: 175px;
+    /*quizas un paddin al menos de 5 px funque bien*/
+}
+
