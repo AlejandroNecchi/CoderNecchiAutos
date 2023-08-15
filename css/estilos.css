@@ -27,6 +27,8 @@ h1{
     justify-content: start;
 }
 
+/*toquetear cosas en los nav ul etc hasta se arregle el problema de el expandible*/
+
 nav{
     width: 80%;
     height: 70px;
@@ -35,12 +37,12 @@ nav{
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
-
+/* modifique algo del nav aca abajo */
 nav ul{
     width: 100%;
     list-style: none;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -87,10 +89,13 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 100%;
+    z-index: 0;
 }
 
 .autosIndexImg{
-    width: 600px;
+    width: 250px;
+    height: 175px;
 }
 
 footer{
@@ -125,19 +130,16 @@ footer{
 .menuFooter{
     padding: 5px;
     text-decoration: none;
-    color: rgb(169, 119, 219);
+    color: rgb(151, 169, 221);
     display: flex;
     align-items: center;
 }
 
-.footerMapa{
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .encontrar{
     padding: 10px;
-    color: rgb(169, 119, 219);
+    color: rgb(151, 169, 221);
 }
 
 /*
@@ -169,13 +171,25 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     padding: 20px;
 }
 
-.autosIndex{
-    max-width: 100%;
+/* Comiendo de mediaqueries */
+
+@media only screen and (max-width: 991px){
+    .navHamburguesa{
+        background-color: white;
+    }
 }
 
-.autosIndexImg{
-    width: 250px;
-    height: 175px;
-    /*quizas un paddin al menos de 5 px funque bien*/
+@media only screen and (min-width: 769px){
+    .footerMapa{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
+@media only screen and (max-width: 768px){
+    .footerMapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
