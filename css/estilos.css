@@ -270,11 +270,63 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
 
 /* comienzo de financiatuauto */
 
+.FinanciaSesenta{
 
+    margin: 100px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.FinanciaSesentaCuotasTitle{
+    font-size: 3rem;
+}
 
+.FinanciaSesentaCuotasP{
+    font-size: 1.5rem;
+}
 
+.unorderFinanciaP{
+    margin: 70px 0px 70px 0px;
+    display: flex;
+    justify-content: center;
+}
 
+.unorderFinancia{
+    list-style: none;
+}
+
+.botonFinancia{
+    width: 170px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonFinancia:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.imgFinanciaP{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgFinancia{
+    width: 1500px;
+}
+
+/* comienzo de  */
 
 
 /* Comienzo de mediaqueries
@@ -283,9 +335,68 @@ tablets 768-1024 | 1024-768
 desktop 1680-1050
 */
 
+@media only screen and (max-width: 1420px){
+    .imgVenderCotizar{
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    .imgVenderCotizar{
+    width: 600px;
+    }
+    .imgFinancia{
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1098px){
+    .imgVenderCotizar{
+    width: 500px;
+    }
+    .titleCotizar{
+        font-size: 2rem;
+    }
+    .textCotizarPar{
+        font-size: 1rem;
+    }
+    .vendeUnSoloClick{
+    font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .venderCotizar{
+        flex-direction: column;
+    }
+    .imgVender{
+        display: flex;
+        justify-content: center;
+    }
+    .imgVenderCotizar{
+        width: 100%;
+    }
+    .imgFinancia{
+        width: 800px;
+    }
+    .FinanciaSesentaCuotasTitle{
+        font-size: 2rem;
+    }
+    .FinanciaSesentaCuotasP{
+    font-size: 1rem;
+    }
+}
+
 @media only screen and (max-width: 991px){
     .navHamburguesa{
         background-color: white;
+    }
+}
+
+@media only screen and (max-width: 922px){
+    .imgFinancia{
+        width: 600px;
     }
 }
 
@@ -302,44 +413,33 @@ desktop 1680-1050
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media only screen and (max-width: 1420px){
-    .imgVenderCotizar{
-        width: 700px;
+    .FinanciaSesentaCuotasTitle{
+        font-size: 1.5rem;
+    }
+    .FinanciaSesentaCuotasP{
+    font-size: 0.75rem;
+    }
+    .imgFinancia{
+        width: 500px;
     }
 }
 
-@media only screen and (max-width: 1230px){
-    .imgVenderCotizar{
-    width: 600px;
-}
-}
+/* 
 
-@media only screen and (max-width: 1098px){
-    .imgVenderCotizar{
-    width: 500px;
-}
-    .titleCotizar{
-        font-size: 2rem;
+    .FinanciaSesentaCuotasTitle{
+        font-size: 1.5rem;
     }
-    .textCotizarPar{
-        font-size: 1rem;
+    .FinanciaSesentaCuotasP{
+    font-size: 0.75rem;
     }
-    .vendeUnSoloClick{
-    font-size: 1rem;
-}
-}
+    .imgFinancia{
+        width: 500px;
+    }
 
-@media only screen and (max-width: 1024px){
-    .venderCotizar{
-        flex-direction: column;
-    }
-    .imgVender{
-        display: flex;
-        justify-content: center;
-    }
-    .imgVenderCotizar{
-        width: 100%;
-    }
-}
+
+*/
+
+
+
+
+
