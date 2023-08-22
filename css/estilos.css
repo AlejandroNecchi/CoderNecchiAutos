@@ -184,7 +184,6 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
 .imgVender{
     display: flex;
     justify-content: center;
-    background-color: red;
 }
 
 .imgVenderCotizar{
@@ -344,7 +343,6 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     margin: 100px 0px 100px 0px;
     display: flex;
     justify-content: center;
-    background-color: red;
 }
 
 .imgService{
@@ -364,14 +362,15 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     width: 60%;
     display: flex;
     justify-content: center;
-    background-color: yellow;
 }
 
 .serviceTitle{
+    margin: 20px;
     font-size: 3rem;
 }
 
 .serviceTexto{
+    margin: 20px;
     font-size: 1.2rem;
 }
 
@@ -435,6 +434,13 @@ desktop 1680-1050
     }
     .vendeUnSoloClick{
     font-size: 1rem;
+    }
+    .serviceTitle{
+        font-size: 2rem;
+    }
+    
+    .serviceTexto{
+        font-size: 1.2rem;
     }
 }
 
