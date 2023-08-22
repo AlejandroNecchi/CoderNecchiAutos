@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -137,11 +135,14 @@ footer{
     align-items: center;
 }
 
-
-
 .encontrar{
     padding: 10px;
     color: rgb(151, 169, 221);
+}
+
+.map{
+    width: 400px;
+    height: 300px;
 }
 
 /*
@@ -336,7 +337,7 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     justify-content: center;
 }
 
-/* comienzo de  contrata un service*/
+/* comienzo de contrata un service*/
 
 .imgServiceP{
     width: 100%;
@@ -403,6 +404,29 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
 .unorderService{
     list-style: none;
 }
+
+/* comienzo de contacto*/
+
+.imgContactoP{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContacto{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Comienzo de mediaqueries
 smart phones 320-480 | 480-320
@@ -476,5 +500,15 @@ desktop 1680-1050
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .map{
+        width: 350px;
+        height: 250px;
+    }
+    .derechosTitle{
+        font-size: 1rem;
     }
 }
