@@ -1,3 +1,15 @@
+/* 
+
+.color1 {color: #120907;}
+.color2 {color: #252034;}
+.color3 {color: #5c5987;}
+.color4 {color: #9b9de2;}
+.color5 {color: #d7dced;}
+MICOLOR
+#97a9dd
+
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +19,7 @@
 font-family: 'Libre Franklin', sans-serif;
 */
 body{
-    background-color: rgb(151, 169, 221);
+    background-color: #97a9dd;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -33,7 +45,7 @@ nav{
     width: 80%;
     height: 70px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #252034;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -61,8 +73,8 @@ nav ul li{
 
 /*modificar paddin a menos*/
 nav li a:hover{
-    background-color: rgb(151, 169, 221);
-    color: white;
+    background-color: #d7dced;
+    color: #120907;
     border-radius: 10px;
     opacity: 1;
 }
@@ -419,29 +431,29 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
 }
 
 .contactoTextosYTitle{
-    background-color: purple;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.contactoTitle{
-    background-color: yellow;
-}
-
-.contactoTextos{
-    background-color: red;
+.contactoTitleP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .botonesContactoA{
-        width: 170px;
-        height: 50px;
-        font-size: 1.5rem;
-        text-decoration: none;
-        background-color: white;
-        border-radius: 10px;
-        color:rgb(151, 169, 221);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+    width: 250px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .botonesContactoA:hover{
@@ -467,25 +479,92 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     margin: 15px;
 }
 
-/* 
-
-.botonService{
-        width: 170px;
-        height: 50px;
-        font-size: 1.5rem;
-        text-decoration: none;
-        background-color: white;
-        border-radius: 10px;
-        color:rgb(151, 169, 221);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+.contactoFormP{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-*/
+.contactoForm{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.contactoTitle{
+    margin: 30px;
+}
 
+.contactoTitleF{
+    margin-bottom: 50px;
+}
+
+.enviarBorrarC{
+    width: 250px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.enviarBorrarC:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.formC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    outline: none;
+    color: rgb(6, 104, 15);
+}
+
+.provincias{
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    outline: none;
+    color: aqua;
+}
+
+::placeholder{
+    color: aqua;
+}
+
+.textoFormC{
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    outline: none;
+    color: rgb(6, 104, 15);
+}
+
+/* 
 
 /* Comienzo de mediaqueries
 smart phones 320-480 | 480-320

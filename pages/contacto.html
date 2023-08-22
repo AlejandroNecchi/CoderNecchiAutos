@@ -59,15 +59,17 @@
         </section>
 
         <section class="contactoTextosYTitle">
+            <article class="contactoTitleP">
             <h2 class="contactoTitle">
                 ¿Necesitás ayuda? 
                 ¡Contactanos!
             </h2>
             <p class="contactoTextos">
                 Contestamos cualquier duda que tengas de manera rápida y clara.
-                Llamanos al 0800-XXX-XXXX
+                Llamanos al 0800-549-6285
             </p>
-            <article class="unorderContacto">
+            </article>
+            <article class="unorderContactoP">
                 <ul class="unorderContacto">
                     <li class="botonesContacto">
                         <a class="botonesContactoA" href="">Whatsapp</a>
@@ -82,57 +84,63 @@
 
         <!-- ver el formulario este mañana -->
 
-        <section>
+        <section class="contactoFormP">
+            <div class="contactoForm">
+            <article>
+                <h2 class="contactoTitleF">
+                    También podes contactarnos llenando este formulario
+                </h2>
+            </article>
+
             <fieldset>
-                <form action="">
-                    <div>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="surname">Apellido</label>
-                        <input type="text" name="surname">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email">Email*</label>
-                        <input type="email" required name="email" placeholder="poner email">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="nac">Fecha de nacimiento</label>
-                        <input type="date" name="nac">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="pais">País de residencia</label>
-                        <select name="pais" id="">
-                            <option value="arg">ARGENTINA</option>
-                            <option value="uru">Uruguay</option>
-                            <option value="br">BRASIL</option>
+                <form class="formC" action="">
+                    <section>
+                        <input class="nombreC" type="text" name="nombre" placeholder="Escribe tu nombre">
+                    </section>
+                    <section>
+                        <input class="apellidoC" type="text" name="apellido" placeholder="Escribe tu apellido">
+                    </section>
+                    <section>
+                        <input class="emailC" type="email" name="email" placeholder="Escribe tu email">
+                    </section>
+                    <section>
+                        <input class="telefonoC" type="text" name="telefono" placeholder="Escribe tu teléfono">
+                    </section>
+                    <section>
+                        <select class="provinciaC provincias" name="provincia" id="">
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
                         </select>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="sexo">Género</label>
-                        <br>
-                        <input type="radio" name="sexo" value="fem">Mujer
-                        <input type="radio" name="sexo" value="hom">Hombre
-                        <input type="radio" name="sexo" value="otro">No binario
-                    </div>
-                    <br>
-        
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar datos">
+                    </section>
+                    <section>
+                        <textarea class="textoFormC" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="mensaje"></textarea>
+                    </section>        
+                    <input class="enviarBorrarC" type="submit" value="Enviar datos">
+                    <input class="enviarBorrarC" type="reset" value="Borrar datos">
                 </form>
-                </fieldset>
-            </main>
+            </fieldset>
+            </div>
         </section>
 
     </main>
