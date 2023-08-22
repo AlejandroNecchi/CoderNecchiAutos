@@ -418,13 +418,72 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     width: 90%;
 }
 
+.contactoTextosYTitle{
+    background-color: purple;
+}
 
+.contactoTitle{
+    background-color: yellow;
+}
 
+.contactoTextos{
+    background-color: red;
+}
 
+.botonesContactoA{
+        width: 170px;
+        height: 50px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 10px;
+        color:rgb(151, 169, 221);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
 
+.botonesContactoA:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
 
+.unorderContactoP{
+    display: flex;
+    justify-content: center;
+}
 
+.unorderContacto{
+    list-style: none;
+}
 
+.botonesContacto{
+    margin: 15px;
+}
+
+.botonesContactoDos{
+    margin: 15px;
+}
+
+/* 
+
+.botonService{
+        width: 170px;
+        height: 50px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 10px;
+        color:rgb(151, 169, 221);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+*/
 
 
 
