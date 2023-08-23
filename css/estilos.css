@@ -392,7 +392,7 @@ footer {
   footer .footerMapa .encontrar {
     padding: 10px;
     color: #97a9dd; }
-  footer .footerMapa .map {
+  footer .footerMapa .mapaDelFooter {
     width: 400px;
     height: 300px; }
   footer .redesSocialesFooter {
@@ -452,7 +452,7 @@ desktop 1680-1050
     align-items: center; } }
 
 @media only screen and (max-width: 600px) {
-  .map {
+  .footerMapa .MapaYTexto .mapaDelFooter {
     width: 350px;
     height: 250px; }
   .derechosTitle {
