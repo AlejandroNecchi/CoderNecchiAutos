@@ -4,27 +4,21 @@
   padding: 0;
   box-sizing: border-box; }
 
-/*
-font-family: 'Libre Franklin', sans-serif;
-*/
 body {
   background-color: #97a9dd;
   font-family: 'DM Sans', sans-serif; }
 
-h1 {
-  padding: 20px; }
-
-.headerTitulo {
+.header .headerTitulo {
   display: flex;
   justify-content: start; }
+  .header .headerTitulo h1 {
+    padding: 20px; }
+    .header .headerTitulo h1 .headerTituloHijo {
+      color: black;
+      text-decoration: none;
+      display: flex;
+      justify-content: start; }
 
-.headerTituloHijo {
-  color: black;
-  text-decoration: none;
-  display: flex;
-  justify-content: start; }
-
-/*toquetear cosas en los nav ul etc hasta se arregle el problema de el expandible*/
 nav {
   width: 80%;
   height: 70px;
@@ -34,30 +28,24 @@ nav {
   display: flex;
   justify-content: center;
   z-index: 1; }
-
-/* modifique algo del nav aca abajo */
-nav ul {
-  width: 100%;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  padding: 20px; }
-
-nav ul a {
-  color: #97a9dd;
-  text-decoration: none;
-  padding: 0.7rem;
-  opacity: 0.7; }
-
-nav ul li {
-  padding: 30px; }
-
-/*modificar paddin a menos*/
-nav li a:hover {
-  background-color: #d7dced;
-  color: #120907;
-  border-radius: 10px;
-  opacity: 1; }
+  nav ul {
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; }
+    nav ul li {
+      padding: 30px; }
+      nav ul li a {
+        color: #97a9dd;
+        text-decoration: none;
+        padding: 0.7rem;
+        opacity: 0.7; }
+        nav ul li a:hover {
+          background-color: #d7dced;
+          color: #120907;
+          border-radius: 10px;
+          opacity: 1; }
 
 .buscadorMenu {
   border-radius: 7.5px;
@@ -65,13 +53,8 @@ nav li a:hover {
   height: 40px;
   margin: 0 auto;
   background-color: #bababa; }
-
-.buscador {
-  margin: 40px; }
-
-img {
-  width: 400px;
-  margin: 20px; }
+  .buscadorMenu .buscador {
+    margin: 40px; }
 
 .autosIndex {
   margin: 10px;
@@ -80,117 +63,63 @@ img {
   justify-content: center;
   max-width: 100%;
   z-index: 0; }
+  .autosIndex .autosIndexImg {
+    width: 250px;
+    height: 175px;
+    margin: 20px; }
 
-.autosIndexImg {
-  width: 250px;
-  height: 175px; }
-
-footer {
-  background-color: white; }
-
-.footerTitle1 {
-  display: flex;
-  justify-content: start; }
-
-.footerTitle {
-  text-decoration: none;
-  color: #97a9dd; }
-
-.footerTitlePadre {
-  padding: 20px;
-  font-size: 2rem;
-  display: flex; }
-
-.menuFooterPadre {
-  list-style: none; }
-
-.menuFooterHijo {
-  padding: 15px; }
-
-.menuFooter {
-  padding: 5px;
-  text-decoration: none;
-  color: #97a9dd;
-  display: flex;
-  align-items: center; }
-
-.encontrar {
-  padding: 10px;
-  color: #97a9dd; }
-
-.map {
-  width: 400px;
-  height: 300px; }
-
-/*
-Acá intenté hacer que los "botones" osea las imágenes de las redes sociales sean mas chicas a la hora de clickear pero no pude, necesitaría una class en las A HREF de cada imagen estoy casi seguro pero lo intenté y no hubo caso, si me podes dar una mano con esto sería genial, gracias :D.
-*/
-.redesSocialesFooter {
-  width: 100%;
-  height: 100px;
-  padding: 20px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.redesSociales {
-  width: 30px;
-  height: 30px; }
-
-.redesSociales2 {
-  width: 30px;
-  height: 20px; }
-
-.derechos {
-  padding: 20px; }
-
-/* comienzo de vendertuauto */
-.venderCotizar {
+.mainVendeTuAuto .venderCotizar {
   width: 90%;
   margin: 30px auto;
   display: flex;
   justify-content: center; }
+  .mainVendeTuAuto .venderCotizar .imgVender {
+    display: flex;
+    justify-content: center; }
+    .mainVendeTuAuto .venderCotizar .imgVender .imgVenderCotizar {
+      width: 800px;
+      margin: 20px; }
+  .mainVendeTuAuto .venderCotizar .contenedorTextCotizar {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mainVendeTuAuto .venderCotizar .contenedorTextCotizar .titleCotizarC {
+      max-width: 70% auto; }
+      .mainVendeTuAuto .venderCotizar .contenedorTextCotizar .titleCotizarC .titleCotizar {
+        font-size: 3rem; }
+    .mainVendeTuAuto .venderCotizar .contenedorTextCotizar .textCotizar {
+      max-width: 70% auto; }
+      .mainVendeTuAuto .venderCotizar .contenedorTextCotizar .textCotizar .textCotizarPar {
+        font-size: 1.5rem; }
 
-.imgVender {
-  display: flex;
-  justify-content: center; }
-
-.imgVenderCotizar {
-  width: 800px;
-  margin: 20px; }
-
-.contenedorTextCotizar {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.titleCotizarC {
-  max-width: 70% auto; }
-
-.titleCotizar {
-  font-size: 3rem; }
-
-.textCotizar {
-  max-width: 70% auto; }
-
-.textCotizarPar {
-  font-size: 1.5rem; }
-
-.textBotonCotizar {
+.mainVendeTuAuto .textBotonCotizar {
   margin: 70px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center; }
-
-.vendeUnSoloClick {
-  font-size: 1.5rem; }
-
-.unorderCotiza {
-  list-style: none; }
+  .mainVendeTuAuto .textBotonCotizar .vendeUnSoloClick {
+    font-size: 1.5rem; }
+  .mainVendeTuAuto .textBotonCotizar .unorderCotiza {
+    list-style: none; }
+    .mainVendeTuAuto .textBotonCotizar .unorderCotiza .listCotizaA {
+      width: 170px;
+      height: 50px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      background-color: white;
+      border-radius: 10px;
+      color: #97a9dd;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
+      .mainVendeTuAuto .textBotonCotizar .unorderCotiza .listCotizaA:hover {
+        background-color: #97a9dd;
+        color: white;
+        border-radius: 10px; }
 
 /* podría hacer un MAP creo que era, el que se usaba con import que era una variante pero con muchos items, así:
     width: 170px;
@@ -205,265 +134,280 @@ Acá intenté hacer que los "botones" osea las imágenes de las redes sociales s
     text-align: center;
     justify-content: center;
 */
-.listCotizaA {
-  width: 170px;
-  height: 50px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
-  border-radius: 10px;
-  color: #97a9dd;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center; }
-
-/* MODIFICAR ESTOS COLORES ------------------------------------------------------------------- */
-.listCotizaA:hover {
-  background-color: #97a9dd;
-  color: white;
-  border-radius: 10px; }
-
-/* comienzo de financiatuauto */
-.FinanciaSesenta {
+/* fin de Main vendetuauto */
+/* comienzo de Main financiatuauto */
+.mainFinancia .FinanciaSesenta {
   width: 100%;
   margin: 100px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .mainFinancia .FinanciaSesenta .FinanciaSesentaCuotasTitle {
+    width: 80%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center; }
+  .mainFinancia .FinanciaSesenta .FinanciaSesentaCuotasP {
+    width: 80%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center; }
 
-.FinanciaSesentaCuotasTitle {
-  width: 80%;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center; }
-
-.FinanciaSesentaCuotasP {
-  width: 80%;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center; }
-
-.unorderFinanciaP {
+.mainFinancia .unorderFinanciaP {
   margin: 70px 0px 70px 0px;
   display: flex;
   justify-content: center; }
+  .mainFinancia .unorderFinanciaP .unorderFinancia {
+    list-style: none; }
+    .mainFinancia .unorderFinanciaP .unorderFinancia .botonFinancia {
+      width: 170px;
+      height: 50px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      background-color: white;
+      border-radius: 10px;
+      color: #97a9dd;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
+      .mainFinancia .unorderFinanciaP .unorderFinancia .botonFinancia:hover {
+        background-color: #97a9dd;
+        color: white;
+        border-radius: 10px; }
 
-.unorderFinancia {
-  list-style: none; }
-
-.botonFinancia {
-  width: 170px;
-  height: 50px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
-  border-radius: 10px;
-  color: #97a9dd;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center; }
-
-.botonFinancia:hover {
-  background-color: #97a9dd;
-  color: white;
-  border-radius: 10px; }
-
-.imgFinanciaP {
+.mainFinancia .imgFinanciaP {
   width: 100%;
   margin-bottom: 70px;
   display: flex;
   justify-content: center; }
+  .mainFinancia .imgFinanciaP .imgFinancia {
+    width: 80%;
+    display: flex;
+    justify-content: center; }
 
-.imgFinancia {
-  width: 80%;
-  display: flex;
-  justify-content: center; }
-
-/* comienzo de contrata un service*/
-.imgServiceP {
+/* fin de Main financiatuauto */
+/* comienzo de Main contrataunservice */
+.mainService .imgServiceP {
   width: 100%;
   margin: 100px 0px 100px 0px;
   display: flex;
   justify-content: center; }
+  .mainService .imgServiceP .imgService {
+    width: 80%;
+    display: flex;
+    justify-content: center; }
 
-.imgService {
-  width: 80%;
-  display: flex;
-  justify-content: center; }
-
-.serviceTextosYTitle {
+.mainService .serviceTextosYTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .mainService .serviceTextosYTitle .serviceTyTitle {
+    width: 60%;
+    display: flex;
+    justify-content: center; }
+    .mainService .serviceTextosYTitle .serviceTyTitle .serviceTitle {
+      margin: 20px;
+      font-size: 3rem; }
+    .mainService .serviceTextosYTitle .serviceTyTitle .serviceTexto {
+      margin: 20px;
+      font-size: 1.2rem; }
 
-.serviceTyTitle {
-  width: 60%;
-  display: flex;
-  justify-content: center; }
-
-.serviceTitle {
-  margin: 20px;
-  font-size: 3rem; }
-
-.serviceTexto {
-  margin: 20px;
-  font-size: 1.2rem; }
-
-.botonService {
-  width: 170px;
-  height: 50px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
-  border-radius: 10px;
-  color: #97a9dd;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center; }
-
-.botonService:hover {
-  background-color: #97a9dd;
-  color: white;
-  border-radius: 10px; }
-
-.unorderServiceP {
+.mainService .unorderServiceP {
   margin: 70px 0px 70px 0px;
   display: flex;
   justify-content: center; }
+  .mainService .unorderServiceP .unorderService {
+    list-style: none; }
+    .mainService .unorderServiceP .unorderService .botonService {
+      width: 170px;
+      height: 50px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      background-color: white;
+      border-radius: 10px;
+      color: #97a9dd;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center; }
+      .mainService .unorderServiceP .unorderService .botonService:hover {
+        background-color: #97a9dd;
+        color: white;
+        border-radius: 10px; }
 
-.unorderService {
-  list-style: none; }
-
-/* comienzo de contacto*/
-.imgContactoP {
+/* fin de Main contrataunservice */
+/* comienzo de Main contacto */
+.mainContacto .imgContactoP {
   width: 100%;
   margin: 20px 0px 20px 0px;
   display: flex;
   justify-content: center; }
+  .mainContacto .imgContactoP .imgContacto {
+    width: 90%; }
 
-.imgContacto {
-  width: 90%; }
-
-.contactoTextosYTitle {
+.mainContacto .contactoTextosYTitle {
   display: flex;
   justify-content: center;
   flex-direction: column; }
+  .mainContacto .contactoTextosYTitle .contactoTitleP {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainContacto .contactoTextosYTitle .contactoTitleP .contactoTitle {
+      margin: 30px; }
+  .mainContacto .contactoTextosYTitle .unorderContactoP {
+    display: flex;
+    justify-content: center; }
+    .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto {
+      list-style: none; }
+      .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContacto {
+        margin: 15px; }
+        .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContacto .botonesContactoA {
+          width: 250px;
+          height: 50px;
+          font-size: 1.5rem;
+          text-decoration: none;
+          background-color: white;
+          border-radius: 10px;
+          color: #97a9dd;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center; }
+          .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContacto .botonesContactoA:hover {
+            background-color: #97a9dd;
+            color: white;
+            border-radius: 10px; }
+      .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos {
+        margin: 15px; }
+        .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos .botonesContactoA {
+          width: 250px;
+          height: 50px;
+          font-size: 1.5rem;
+          text-decoration: none;
+          background-color: white;
+          border-radius: 10px;
+          color: #97a9dd;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center; }
+          .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos .botonesContactoA:hover {
+            background-color: #97a9dd;
+            color: white;
+            border-radius: 10px; }
 
-.contactoTitleP {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.botonesContactoA {
-  width: 250px;
-  height: 50px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
-  border-radius: 10px;
-  color: #97a9dd;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center; }
-
-.botonesContactoA:hover {
-  background-color: #97a9dd;
-  color: white;
-  border-radius: 10px; }
-
-.unorderContactoP {
-  display: flex;
-  justify-content: center; }
-
-.unorderContacto {
-  list-style: none; }
-
-.botonesContacto {
-  margin: 15px; }
-
-.botonesContactoDos {
-  margin: 15px; }
-
-.contactoFormP {
+.mainContacto .contactoFormP {
   width: 100%;
   display: flex;
   justify-content: center; }
+  .mainContacto .contactoFormP .contactoForm {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainContacto .contactoFormP .contactoForm .contactoTitleF {
+      margin-bottom: 50px; }
+  .mainContacto .contactoFormP .formularioContacto .formC {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainContacto .contactoFormP .formularioContacto .formC input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 25px;
+      background-color: transparent;
+      border: 2px solid red;
+      margin-bottom: 30px;
+      outline: none;
+      color: #06680f; }
+    .mainContacto .contactoFormP .formularioContacto .formC .provincias {
+      width: 300px;
+      padding: 10px;
+      border-radius: 25px;
+      background-color: transparent;
+      border: 2px solid red;
+      margin-bottom: 30px;
+      outline: none;
+      color: aqua; }
+    .mainContacto .contactoFormP .formularioContacto .formC .textoFormC {
+      width: 300px;
+      padding: 10px;
+      border-radius: 25px;
+      background-color: transparent;
+      border: 2px solid red;
+      margin-bottom: 30px;
+      outline: none;
+      color: #06680f; }
+    .mainContacto .contactoFormP .formularioContacto .formC .enviarBorrarC {
+      width: 250px;
+      height: 50px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      background-color: white;
+      border-radius: 10px;
+      color: #97a9dd;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 0px; }
+      .mainContacto .contactoFormP .formularioContacto .formC .enviarBorrarC:hover {
+        background-color: #97a9dd;
+        color: white;
+        border-radius: 10px; }
 
-.contactoForm {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.contactoTitle {
-  margin: 30px; }
-
-.contactoTitleF {
-  margin-bottom: 50px; }
-
-.enviarBorrarC {
-  width: 250px;
-  height: 50px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: white;
-  border-radius: 10px;
-  color: #97a9dd;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 0px; }
-
-.enviarBorrarC:hover {
-  background-color: #97a9dd;
-  color: white;
-  border-radius: 10px; }
-
-.formC {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-input {
-  width: 300px;
-  padding: 10px;
-  border-radius: 25px;
-  background-color: transparent;
-  border: 2px solid red;
-  margin-bottom: 30px;
-  outline: none;
-  color: #06680f; }
-
-.provincias {
-  width: 300px;
-  padding: 10px;
-  border-radius: 25px;
-  background-color: transparent;
-  border: 2px solid red;
-  margin-bottom: 30px;
-  outline: none;
-  color: aqua; }
-
+/* este ::placeholder realmente no sé donde ponerlo, si me podrías decir te lo agradecería mucho */
 ::placeholder {
   color: aqua; }
 
-.textoFormC {
-  width: 300px;
-  padding: 10px;
-  border-radius: 25px;
-  background-color: transparent;
-  border: 2px solid red;
-  margin-bottom: 30px;
-  outline: none;
-  color: #06680f; }
-
-/* 
+/* fin de Main contacto */
+footer {
+  background-color: white; }
+  footer .footerTitle1 {
+    display: flex;
+    justify-content: start; }
+    footer .footerTitle1 .footerTitlePadre {
+      padding: 20px;
+      font-size: 2rem;
+      display: flex; }
+      footer .footerTitle1 .footerTitlePadre .footerTitle {
+        text-decoration: none;
+        color: #97a9dd; }
+  footer .footerMapa .menuFooterPadre {
+    list-style: none; }
+    footer .footerMapa .menuFooterPadre .menuFooterHijo {
+      padding: 15px; }
+      footer .footerMapa .menuFooterPadre .menuFooterHijo .menuFooter {
+        padding: 5px;
+        text-decoration: none;
+        color: #97a9dd;
+        display: flex;
+        align-items: center; }
+  footer .footerMapa .encontrar {
+    padding: 10px;
+    color: #97a9dd; }
+  footer .footerMapa .map {
+    width: 400px;
+    height: 300px; }
+  footer .redesSocialesFooter {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    footer .redesSocialesFooter .redesSociales {
+      width: 30px;
+      height: 30px; }
+    footer .redesSocialesFooter .redesSociales2 {
+      width: 30px;
+      height: 20px; }
+  footer .derechos {
+    padding: 20px; }
 
 /* Comienzo de mediaqueries
 smart phones 320-480 | 480-320
