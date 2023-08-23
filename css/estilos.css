@@ -72,13 +72,16 @@ nav {
   width: 90%;
   margin: 30px auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   .mainVendeTuAuto .venderCotizar .imgVender {
     display: flex;
     justify-content: center; }
     .mainVendeTuAuto .venderCotizar .imgVender .imgVenderCotizar {
-      width: 800px;
-      margin: 20px; }
+      width: 100%;
+      margin: 20px;
+      display: flex;
+      justify-content: center; }
   .mainVendeTuAuto .venderCotizar .contenedorTextCotizar {
     margin: 20px;
     display: flex;
@@ -401,9 +404,11 @@ footer {
     flex-wrap: wrap;
     justify-content: center; }
     footer .redesSocialesFooter .redesSociales {
+      margin: 10px;
       width: 30px;
       height: 30px; }
     footer .redesSocialesFooter .redesSociales2 {
+      margin: 10px;
       width: 30px;
       height: 20px; }
   footer .derechos {
@@ -414,17 +419,7 @@ smart phones 320-480 | 480-320
 tablets 768-1024 | 1024-768
 desktop 1680-1050
 */
-@media only screen and (max-width: 1420px) {
-  .imgVenderCotizar {
-    width: 700px; } }
-
-@media only screen and (max-width: 1230px) {
-  .imgVenderCotizar {
-    width: 600px; } }
-
 @media only screen and (max-width: 1098px) {
-  .imgVenderCotizar {
-    width: 500px; }
   .titleCotizar {
     font-size: 2rem; }
   .textCotizarPar {
@@ -438,12 +433,7 @@ desktop 1680-1050
 
 @media only screen and (max-width: 1024px) {
   .venderCotizar {
-    flex-direction: column; }
-  .imgVender {
-    display: flex;
-    justify-content: center; }
-  .imgVenderCotizar {
-    width: 100%; } }
+    flex-direction: column; } }
 
 @media only screen and (max-width: 991px) {
   .navHamburguesa {

@@ -5,21 +5,15 @@ desktop 1680-1050
 */
 
 @media only screen and (max-width: 1420px){
-    .imgVenderCotizar{
-        width: 700px;
-    }
+    
 }
 
 @media only screen and (max-width: 1230px){
-    .imgVenderCotizar{
-    width: 600px;
-    }
+    
 }
 
 @media only screen and (max-width: 1098px){
-    .imgVenderCotizar{
-    width: 500px;
-    }
+    
     .titleCotizar{
         font-size: 2rem;
     }
@@ -42,13 +36,7 @@ desktop 1680-1050
     .venderCotizar{
         flex-direction: column;
     }
-    .imgVender{
-        display: flex;
-        justify-content: center;
-    }
-    .imgVenderCotizar{
-        width: 100%;
-    }
+    
 }
 
 @media only screen and (max-width: 991px){
