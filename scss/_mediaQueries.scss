@@ -1,0 +1,84 @@
+/* Comienzo de mediaqueries
+smart phones 320-480 | 480-320
+tablets 768-1024 | 1024-768
+desktop 1680-1050
+*/
+
+@media only screen and (max-width: 1420px){
+    .imgVenderCotizar{
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    .imgVenderCotizar{
+    width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1098px){
+    .imgVenderCotizar{
+    width: 500px;
+    }
+    .titleCotizar{
+        font-size: 2rem;
+    }
+    .textCotizarPar{
+        font-size: 1rem;
+    }
+    .vendeUnSoloClick{
+    font-size: 1rem;
+    }
+    .serviceTitle{
+        font-size: 2rem;
+    }
+    
+    .serviceTexto{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .venderCotizar{
+        flex-direction: column;
+    }
+    .imgVender{
+        display: flex;
+        justify-content: center;
+    }
+    .imgVenderCotizar{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navHamburguesa{
+        background-color: white;
+        border-radius: 2%;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .footerMapa{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .footerMapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .map{
+        width: 350px;
+        height: 250px;
+    }
+    .derechosTitle{
+        font-size: 1rem;
+    }
+}

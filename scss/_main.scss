@@ -1,0 +1,28 @@
+// comienzo del Main Index
+
+.buscadorMenu{
+    border-radius: 7.5px;
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(186, 186, 186);
+    .buscador{
+        margin: 40px;
+    }
+}
+
+.autosIndex{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    z-index: 0;
+    .autosIndexImg{
+        width: 250px;
+        height: 175px;
+        margin: 20px;
+    }
+}
+
+// fin del Main Index
