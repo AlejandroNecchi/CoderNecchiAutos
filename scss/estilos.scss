@@ -1,0 +1,652 @@
+/* 
+
+.color1 {color: #120907;}
+.color2 {color: #252034;}
+.color3 {color: #5c5987;}
+.color4 {color: #9b9de2;}
+.color5 {color: #d7dced;}
+MICOLOR
+#97a9dd
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+font-family: 'Libre Franklin', sans-serif;
+*/
+body{
+    background-color: #97a9dd;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1{
+    padding: 20px;
+}
+
+.headerTitulo{
+    display: flex;
+    justify-content: start;
+}
+
+.headerTituloHijo{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+}
+
+/*toquetear cosas en los nav ul etc hasta se arregle el problema de el expandible*/
+
+nav{
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #252034;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+/* modifique algo del nav aca abajo */
+nav ul{
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav ul a{
+    color:rgb(151, 169, 221);
+    text-decoration: none;
+    padding: 0.7rem;
+    opacity: 0.7;
+}
+
+nav ul li{
+    padding: 30px;
+}
+
+/*modificar paddin a menos*/
+nav li a:hover{
+    background-color: #d7dced;
+    color: #120907;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.buscadorMenu{
+    border-radius: 7.5px;
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgb(186, 186, 186);
+}
+
+.buscador{
+    margin: 40px;
+}
+
+img{
+    width: 400px;
+    margin: 20px;
+}
+
+.autosIndex{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    z-index: 0;
+}
+
+.autosIndexImg{
+    width: 250px;
+    height: 175px;
+}
+
+footer{
+    background-color: white;
+}
+
+.footerTitle1{
+    display: flex;
+    justify-content: start;
+}
+
+.footerTitle{
+    text-decoration: none;
+    color: rgb(151, 169, 221);
+}
+
+.footerTitlePadre{
+    padding: 20px;
+    
+    font-size: 2rem;
+    display: flex;
+}
+
+.menuFooterPadre{
+    list-style: none;
+}
+
+.menuFooterHijo{
+    padding: 15px;
+}
+
+.menuFooter{
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+}
+
+.encontrar{
+    padding: 10px;
+    color: rgb(151, 169, 221);
+}
+
+.map{
+    width: 400px;
+    height: 300px;
+}
+
+/*
+Acá intenté hacer que los "botones" osea las imágenes de las redes sociales sean mas chicas a la hora de clickear pero no pude, necesitaría una class en las A HREF de cada imagen estoy casi seguro pero lo intenté y no hubo caso, si me podes dar una mano con esto sería genial, gracias :D.
+*/
+
+.redesSocialesFooter{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redesSociales{
+    width: 30px;
+    height: 30px;
+}
+
+.redesSociales2{
+    width: 30px;
+    height: 20px;
+}
+
+.derechos{
+    padding: 20px;
+}
+
+/* comienzo de vendertuauto */
+
+.venderCotizar{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.imgVender{
+    display: flex;
+    justify-content: center;
+}
+
+.imgVenderCotizar{
+    width: 800px;
+    margin: 20px;
+}
+
+.contenedorTextCotizar{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleCotizarC{
+    max-width: 70% auto;
+}
+
+.titleCotizar{
+    font-size: 3rem;
+}
+
+.textCotizar{
+        max-width: 70% auto;
+}
+
+.textCotizarPar{
+    font-size: 1.5rem;
+}
+
+
+
+.textBotonCotizar{
+    margin: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vendeUnSoloClick{
+    font-size: 1.5rem;
+}
+
+.unorderCotiza{
+    list-style: none;
+}
+
+/* podría hacer un MAP creo que era, el que se usaba con import que era una variante pero con muchos items, así:
+    width: 170px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+*/
+
+.listCotizaA{
+    width: 170px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* MODIFICAR ESTOS COLORES ------------------------------------------------------------------- */
+
+.listCotizaA:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+/* comienzo de financiatuauto */
+
+.FinanciaSesenta{
+    width: 100%;
+    margin: 100px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FinanciaSesentaCuotasTitle{
+    width: 80%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.FinanciaSesentaCuotasP{
+    width: 80%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.unorderFinanciaP{
+    margin: 70px 0px 70px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.unorderFinancia{
+    list-style: none;
+}
+
+.botonFinancia{
+    width: 170px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonFinancia:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.imgFinanciaP{
+    width: 100%;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgFinancia{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+/* comienzo de contrata un service*/
+
+.imgServiceP{
+    width: 100%;
+    margin: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgService{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.serviceTextosYTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceTyTitle{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.serviceTitle{
+    margin: 20px;
+    font-size: 3rem;
+}
+
+.serviceTexto{
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+.botonService{
+        width: 170px;
+        height: 50px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 10px;
+        color:rgb(151, 169, 221);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+.botonService:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.unorderServiceP{
+    margin: 70px 0px 70px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.unorderService{
+    list-style: none;
+}
+
+/* comienzo de contacto*/
+
+.imgContactoP{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContacto{
+    width: 90%;
+}
+
+.contactoTextosYTitle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactoTitleP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonesContactoA{
+    width: 250px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonesContactoA:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.unorderContactoP{
+    display: flex;
+    justify-content: center;
+}
+
+.unorderContacto{
+    list-style: none;
+}
+
+.botonesContacto{
+    margin: 15px;
+}
+
+.botonesContactoDos{
+    margin: 15px;
+}
+
+.contactoFormP{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactoForm{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactoTitle{
+    margin: 30px;
+}
+
+.contactoTitleF{
+    margin-bottom: 50px;
+}
+
+.enviarBorrarC{
+    width: 250px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(151, 169, 221);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.enviarBorrarC:hover{
+    background-color: rgb(151, 169, 221);
+    color: white;
+    border-radius: 10px;
+}
+
+.formC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    outline: none;
+    color: rgb(6, 104, 15);
+}
+
+.provincias{
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    outline: none;
+    color: aqua;
+}
+
+::placeholder{
+    color: aqua;
+}
+
+.textoFormC{
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    outline: none;
+    color: rgb(6, 104, 15);
+}
+
+/* 
+
+/* Comienzo de mediaqueries
+smart phones 320-480 | 480-320
+tablets 768-1024 | 1024-768
+desktop 1680-1050
+*/
+
+@media only screen and (max-width: 1420px){
+    .imgVenderCotizar{
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    .imgVenderCotizar{
+    width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1098px){
+    .imgVenderCotizar{
+    width: 500px;
+    }
+    .titleCotizar{
+        font-size: 2rem;
+    }
+    .textCotizarPar{
+        font-size: 1rem;
+    }
+    .vendeUnSoloClick{
+    font-size: 1rem;
+    }
+    .serviceTitle{
+        font-size: 2rem;
+    }
+    
+    .serviceTexto{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .venderCotizar{
+        flex-direction: column;
+    }
+    .imgVender{
+        display: flex;
+        justify-content: center;
+    }
+    .imgVenderCotizar{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navHamburguesa{
+        background-color: white;
+        border-radius: 2%;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .footerMapa{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .footerMapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .map{
+        width: 350px;
+        height: 250px;
+    }
+    .derechosTitle{
+        font-size: 1rem;
+    }
+}
