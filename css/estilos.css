@@ -73,7 +73,9 @@ nav {
         color: #d7dced;
         text-decoration: none;
         padding: 0.7rem;
-        opacity: 0.7; }
+        opacity: 0.7;
+        transition: all 1s ease;
+        font-weight: bold; }
         nav ul li a:hover {
           background-color: #4043a1;
           color: #e5e8f5;
@@ -96,10 +98,34 @@ nav {
   justify-content: center;
   max-width: 100%;
   z-index: 0; }
-  .autosIndex .autosIndexImg {
-    width: 250px;
-    height: 175px;
-    margin: 20px; }
+  .autosIndex .fondoAutosHome {
+    background-color: #d7dced; }
+    .autosIndex .fondoAutosHome .autosIndexImg {
+      width: 250px;
+      height: 175px;
+      margin: 20px; }
+    .autosIndex .fondoAutosHome .botonAutosHome {
+      width: 200px;
+      height: 40px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      background-color: #252034;
+      border-radius: 10px;
+      color: #d7dced;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      border: 3.5px solid #4043a1;
+      transition: all 1s ease;
+      font-weight: bolder;
+      border-radius: 5px; }
+      .autosIndex .fondoAutosHome .botonAutosHome:hover {
+        width: 210px;
+        background-color: #4043a1;
+        color: #d7dced;
+        border-radius: 10px;
+        border: 3.5px solid #252034; }
 
 .mainVendeTuAuto .venderCotizar {
   width: 90%;
@@ -152,7 +178,9 @@ nav {
       align-items: center;
       text-align: center;
       justify-content: center;
-      border: 2px solid #252034; }
+      border: 2px solid #252034;
+      transition: all 1s ease;
+      font-weight: bolder; }
       .mainVendeTuAuto .textBotonCotizar .unorderCotiza .listCotizaA:hover {
         background-color: #252034;
         color: #d7dced;
@@ -209,7 +237,9 @@ nav {
       align-items: center;
       text-align: center;
       justify-content: center;
-      border: 2px solid #252034; }
+      border: 2px solid #252034;
+      transition: all 1s ease;
+      font-weight: bolder; }
       .mainFinancia .unorderFinanciaP .unorderFinancia .botonFinancia:hover {
         background-color: #252034;
         color: #d7dced;
@@ -272,7 +302,9 @@ nav {
       align-items: center;
       text-align: center;
       justify-content: center;
-      border: 2px solid #252034; }
+      border: 2px solid #252034;
+      transition: all 1s ease;
+      font-weight: bolder; }
       .mainService .unorderServiceP .unorderService .botonService:hover {
         background-color: #252034;
         color: #d7dced;
@@ -322,7 +354,9 @@ nav {
           align-items: center;
           text-align: center;
           justify-content: center;
-          border: 2px solid #252034; }
+          border: 2px solid #252034;
+          transition: all 1s ease;
+          font-weight: bolder; }
           .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContacto .botonesContactoA:hover {
             background-color: #252034;
             color: #d7dced;
@@ -342,7 +376,9 @@ nav {
           align-items: center;
           text-align: center;
           justify-content: center;
-          border: 2px solid #252034; }
+          border: 2px solid #252034;
+          transition: all 1s ease;
+          font-weight: bolder; }
           .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos .botonesContactoA:hover {
             background-color: #252034;
             color: #d7dced;
@@ -409,7 +445,8 @@ nav {
       text-align: center;
       justify-content: center;
       padding: 0px;
-      border: 2px solid #252034; }
+      border: 2px solid #252034;
+      transition: all 1s ease; }
       .mainContacto .contactoFormP .formularioContacto .formC .enviarBorrarC:hover {
         background-color: #252034;
         color: #d7dced;
