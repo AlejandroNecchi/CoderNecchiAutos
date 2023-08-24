@@ -7,7 +7,7 @@
         h1{
             padding: 20px;
             .headerTituloHijo{
-                color: black;
+                color: $color1;
                 text-decoration: none;
                 display: flex;
                 justify-content: start;
@@ -24,7 +24,7 @@ nav{
     width: 80%;
     height: 70px;
     margin: 0 auto;
-    background-color: #252034;
+    background-color: $color2;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -38,13 +38,13 @@ nav{
         li{
             padding: 30px;
             a{
-                color:rgb(151, 169, 221);
+                color:$color5;
                 text-decoration: none;
                 padding: 0.7rem;
                 opacity: 0.7;
                 &:hover{
-                    background-color: #d7dced;
-                    color: #120907;
+                    background-color: $color4;
+                    color: #e5e8f5;
                     border-radius: 10px;
                     opacity: 1;
                 }

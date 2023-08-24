@@ -82,17 +82,19 @@
                 height: 50px;
                 font-size: 1.5rem;
                 text-decoration: none;
-                background-color: white;
+                background-color: $color5;
                 border-radius: 10px;
-                color:rgb(151, 169, 221);
+                color:$color2;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 justify-content: center;
+                border: 2px solid $color2;
                 &:hover{
-                    background-color: rgb(151, 169, 221);
-                    color: white;
+                    background-color: $color2;
+                    color: $color5;
                     border-radius: 10px;
+                    border: 2px solid $color5;
                 }
             }
         }
@@ -148,17 +150,19 @@
                 height: 50px;
                 font-size: 1.5rem;
                 text-decoration: none;
-                background-color: white;
+                background-color: $color5;
                 border-radius: 10px;
-                color:rgb(151, 169, 221);
+                color:$color2;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 justify-content: center;
+                border: 2px solid $color2;
                 &:hover{
-                    background-color: rgb(151, 169, 221);
-                    color: white;
+                    background-color:$color2;
+                    color: $color5;
                     border-radius: 10px;
+                    border: 2px solid $color5;
                 }
             }
         }
@@ -222,17 +226,19 @@
                 height: 50px;
                 font-size: 1.5rem;
                 text-decoration: none;
-                background-color: white;
+                background-color: $color5;
                 border-radius: 10px;
-                color:rgb(151, 169, 221);
+                color:$color2;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 justify-content: center;
+                border: 2px solid $color2;
                 &:hover{
-                    background-color: rgb(151, 169, 221);
-                    color: white;
+                    background-color: $color2;
+                    color: $color5;
                     border-radius: 10px;
+                    border: 2px solid $color5;
                 }
             }
         }
@@ -264,6 +270,11 @@
             .contactoTitle{
                 margin: 30px;
             }
+            .contactoTextos{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+            }
         }
         .unorderContactoP{
             display: flex;
@@ -277,17 +288,19 @@
                         height: 50px;
                         font-size: 1.5rem;
                         text-decoration: none;
-                        background-color: white;
+                        background-color: $color5;
                         border-radius: 10px;
-                        color:rgb(151, 169, 221);
+                        color:$color2;
                         display: flex;
                         align-items: center;
                         text-align: center;
                         justify-content: center;
+                        border: 2px solid $color2;
                         &:hover{
-                            background-color: rgb(151, 169, 221);
-                            color: white;
+                            background-color: $color2;
+                            color: $color5;
                             border-radius: 10px;
+                            border: 2px solid $color5;
                         }
                     }
                 }
@@ -298,17 +311,19 @@
                         height: 50px;
                         font-size: 1.5rem;
                         text-decoration: none;
-                        background-color: white;
+                        background-color: $color5;
                         border-radius: 10px;
-                        color:rgb(151, 169, 221);
+                        color:$color2;
                         display: flex;
                         align-items: center;
                         text-align: center;
                         justify-content: center;
+                        border: 2px solid $color2;
                         &:hover{
-                            background-color: rgb(151, 169, 221);
-                            color: white;
+                            background-color: $color2;
+                            color: $color5;
                             border-radius: 10px;
+                            border: 2px solid $color5;
                         }
                     }
                 }
@@ -336,50 +351,58 @@
                 input{
                     width: 300px;
                     padding: 10px;
-                    border-radius: 25px;
-                    background-color: transparent;
-                    border: 2px solid red;
+                    border-radius: 15px;
+                    background-color: $color5;
+                    border: 2px solid $color2;
                     margin-bottom: 30px;
                     outline: none;
-                    color: rgb(6, 104, 15);
+                    color: $color2;
+                    font-weight: bolder;
                 }
                 .provincias{
                     width: 300px;
                     padding: 10px;
-                    border-radius: 25px;
-                    background-color: transparent;
-                    border: 2px solid red;
+                    border-radius: 15px;
+                    background-color: $color5;
+                    border: 2px solid $color2;
                     margin-bottom: 30px;
                     outline: none;
-                    color: aqua;
+                    color: $color4;
+                    font-weight: bolder;
+                    .provinciasUnidas{
+                        font-weight: bolder;
+                    }
                 }
                 .textoFormC{
                     width: 300px;
                     padding: 10px;
-                    border-radius: 25px;
-                    background-color: transparent;
-                    border: 2px solid red;
+                    border-radius: 15px;
+                    background-color: $color5;
+                    border: 2px solid $color2;
                     margin-bottom: 30px;
                     outline: none;
-                    color: rgb(6, 104, 15);
+                    color: $color2;
+                    font-weight: bolder;
                 }
                 .enviarBorrarC{
                     width: 250px;
                     height: 50px;
                     font-size: 1.5rem;
                     text-decoration: none;
-                    background-color: white;
+                    background-color: $color5;
                     border-radius: 10px;
-                    color:rgb(151, 169, 221);
+                    color:$color2;
                     display: flex;
                     align-items: center;
                     text-align: center;
                     justify-content: center;
                     padding: 0px;
+                    border: 2px solid $color2;
                     &:hover{
-                        background-color: rgb(151, 169, 221);
-                        color: white;
+                        background-color: $color2;
+                        color: $color5;
                         border-radius: 10px;
+                        border: 2px solid $color5;
                     }
                 }
             }
@@ -389,7 +412,7 @@
 
 /* este ::placeholder realmente no sé donde ponerlo, si me podrías decir te lo agradecería mucho */
 ::placeholder{
-    color: aqua;
+    color: $color4;
 }
 
 /* fin de Main contacto */

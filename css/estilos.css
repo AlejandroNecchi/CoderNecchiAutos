@@ -1,12 +1,45 @@
 @charset "UTF-8";
+/*
+#9b9de2
+*/
+/*
+
+.botonFinancia{
+                width: 170px;
+                height: 50px;
+                font-size: 1.5rem;
+                text-decoration: none;
+                background-color: $color5;
+                border-radius: 10px;
+                color:$color2;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                &:hover{
+                    background-color:$color2;
+                    color: $color5;
+                    border-radius: 10px;
+                }
+
+bordes de botones
+
+border: 2px solid $color2;
+
+y hover
+
+border: 2px solid $color5;
+
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  background-color: #97a9dd;
-  font-family: 'DM Sans', sans-serif; }
+  background-color: #4043a1;
+  font-family: 'DM Sans', sans-serif;
+  color: #d7dced; }
 
 .header .headerTitulo {
   display: flex;
@@ -14,7 +47,7 @@ body {
   .header .headerTitulo h1 {
     padding: 20px; }
     .header .headerTitulo h1 .headerTituloHijo {
-      color: black;
+      color: #120907;
       text-decoration: none;
       display: flex;
       justify-content: start; }
@@ -37,13 +70,13 @@ nav {
     nav ul li {
       padding: 30px; }
       nav ul li a {
-        color: #97a9dd;
+        color: #d7dced;
         text-decoration: none;
         padding: 0.7rem;
         opacity: 0.7; }
         nav ul li a:hover {
-          background-color: #d7dced;
-          color: #120907;
+          background-color: #4043a1;
+          color: #e5e8f5;
           border-radius: 10px;
           opacity: 1; }
 
@@ -112,17 +145,19 @@ nav {
       height: 50px;
       font-size: 1.5rem;
       text-decoration: none;
-      background-color: white;
+      background-color: #d7dced;
       border-radius: 10px;
-      color: #97a9dd;
+      color: #252034;
       display: flex;
       align-items: center;
       text-align: center;
-      justify-content: center; }
+      justify-content: center;
+      border: 2px solid #252034; }
       .mainVendeTuAuto .textBotonCotizar .unorderCotiza .listCotizaA:hover {
-        background-color: #97a9dd;
-        color: white;
-        border-radius: 10px; }
+        background-color: #252034;
+        color: #d7dced;
+        border-radius: 10px;
+        border: 2px solid #d7dced; }
 
 /* podría hacer un MAP creo que era, el que se usaba con import que era una variante pero con muchos items, así:
     width: 170px;
@@ -167,17 +202,19 @@ nav {
       height: 50px;
       font-size: 1.5rem;
       text-decoration: none;
-      background-color: white;
+      background-color: #d7dced;
       border-radius: 10px;
-      color: #97a9dd;
+      color: #252034;
       display: flex;
       align-items: center;
       text-align: center;
-      justify-content: center; }
+      justify-content: center;
+      border: 2px solid #252034; }
       .mainFinancia .unorderFinanciaP .unorderFinancia .botonFinancia:hover {
-        background-color: #97a9dd;
-        color: white;
-        border-radius: 10px; }
+        background-color: #252034;
+        color: #d7dced;
+        border-radius: 10px;
+        border: 2px solid #d7dced; }
 
 .mainFinancia .imgFinanciaP {
   width: 100%;
@@ -228,17 +265,19 @@ nav {
       height: 50px;
       font-size: 1.5rem;
       text-decoration: none;
-      background-color: white;
+      background-color: #d7dced;
       border-radius: 10px;
-      color: #97a9dd;
+      color: #252034;
       display: flex;
       align-items: center;
       text-align: center;
-      justify-content: center; }
+      justify-content: center;
+      border: 2px solid #252034; }
       .mainService .unorderServiceP .unorderService .botonService:hover {
-        background-color: #97a9dd;
-        color: white;
-        border-radius: 10px; }
+        background-color: #252034;
+        color: #d7dced;
+        border-radius: 10px;
+        border: 2px solid #d7dced; }
 
 /* fin de Main contrataunservice */
 /* comienzo de Main contacto */
@@ -260,6 +299,10 @@ nav {
     align-items: center; }
     .mainContacto .contactoTextosYTitle .contactoTitleP .contactoTitle {
       margin: 30px; }
+    .mainContacto .contactoTextosYTitle .contactoTitleP .contactoTextos {
+      width: 80%;
+      display: flex;
+      justify-content: center; }
   .mainContacto .contactoTextosYTitle .unorderContactoP {
     display: flex;
     justify-content: center; }
@@ -272,17 +315,19 @@ nav {
           height: 50px;
           font-size: 1.5rem;
           text-decoration: none;
-          background-color: white;
+          background-color: #d7dced;
           border-radius: 10px;
-          color: #97a9dd;
+          color: #252034;
           display: flex;
           align-items: center;
           text-align: center;
-          justify-content: center; }
+          justify-content: center;
+          border: 2px solid #252034; }
           .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContacto .botonesContactoA:hover {
-            background-color: #97a9dd;
-            color: white;
-            border-radius: 10px; }
+            background-color: #252034;
+            color: #d7dced;
+            border-radius: 10px;
+            border: 2px solid #d7dced; }
       .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos {
         margin: 15px; }
         .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos .botonesContactoA {
@@ -290,17 +335,19 @@ nav {
           height: 50px;
           font-size: 1.5rem;
           text-decoration: none;
-          background-color: white;
+          background-color: #d7dced;
           border-radius: 10px;
-          color: #97a9dd;
+          color: #252034;
           display: flex;
           align-items: center;
           text-align: center;
-          justify-content: center; }
+          justify-content: center;
+          border: 2px solid #252034; }
           .mainContacto .contactoTextosYTitle .unorderContactoP .unorderContacto .botonesContactoDos .botonesContactoA:hover {
-            background-color: #97a9dd;
-            color: white;
-            border-radius: 10px; }
+            background-color: #252034;
+            color: #d7dced;
+            border-radius: 10px;
+            border: 2px solid #d7dced; }
 
 .mainContacto .contactoFormP {
   width: 100%;
@@ -320,55 +367,62 @@ nav {
     .mainContacto .contactoFormP .formularioContacto .formC input {
       width: 300px;
       padding: 10px;
-      border-radius: 25px;
-      background-color: transparent;
-      border: 2px solid red;
+      border-radius: 15px;
+      background-color: #d7dced;
+      border: 2px solid #252034;
       margin-bottom: 30px;
       outline: none;
-      color: #06680f; }
+      color: #252034;
+      font-weight: bolder; }
     .mainContacto .contactoFormP .formularioContacto .formC .provincias {
       width: 300px;
       padding: 10px;
-      border-radius: 25px;
-      background-color: transparent;
-      border: 2px solid red;
+      border-radius: 15px;
+      background-color: #d7dced;
+      border: 2px solid #252034;
       margin-bottom: 30px;
       outline: none;
-      color: aqua; }
+      color: #4043a1;
+      font-weight: bolder; }
+      .mainContacto .contactoFormP .formularioContacto .formC .provincias .provinciasUnidas {
+        font-weight: bolder; }
     .mainContacto .contactoFormP .formularioContacto .formC .textoFormC {
       width: 300px;
       padding: 10px;
-      border-radius: 25px;
-      background-color: transparent;
-      border: 2px solid red;
+      border-radius: 15px;
+      background-color: #d7dced;
+      border: 2px solid #252034;
       margin-bottom: 30px;
       outline: none;
-      color: #06680f; }
+      color: #252034;
+      font-weight: bolder; }
     .mainContacto .contactoFormP .formularioContacto .formC .enviarBorrarC {
       width: 250px;
       height: 50px;
       font-size: 1.5rem;
       text-decoration: none;
-      background-color: white;
+      background-color: #d7dced;
       border-radius: 10px;
-      color: #97a9dd;
+      color: #252034;
       display: flex;
       align-items: center;
       text-align: center;
       justify-content: center;
-      padding: 0px; }
+      padding: 0px;
+      border: 2px solid #252034; }
       .mainContacto .contactoFormP .formularioContacto .formC .enviarBorrarC:hover {
-        background-color: #97a9dd;
-        color: white;
-        border-radius: 10px; }
+        background-color: #252034;
+        color: #d7dced;
+        border-radius: 10px;
+        border: 2px solid #d7dced; }
 
 /* este ::placeholder realmente no sé donde ponerlo, si me podrías decir te lo agradecería mucho */
 ::placeholder {
-  color: aqua; }
+  color: #4043a1; }
 
 /* fin de Main contacto */
 footer {
-  background-color: white; }
+  background-color: #d7dced; }
   footer .footerTitle1 {
     display: flex;
     justify-content: start; }
@@ -378,7 +432,7 @@ footer {
       display: flex; }
       footer .footerTitle1 .footerTitlePadre .footerTitle {
         text-decoration: none;
-        color: #97a9dd; }
+        color: #120907; }
   footer .footerMapa .menuFooterPadre {
     list-style: none; }
     footer .footerMapa .menuFooterPadre .menuFooterHijo {
@@ -386,12 +440,14 @@ footer {
       footer .footerMapa .menuFooterPadre .menuFooterHijo .menuFooter {
         padding: 5px;
         text-decoration: none;
-        color: #97a9dd;
+        color: #4043a1;
+        font-weight: bold;
         display: flex;
         align-items: center; }
   footer .footerMapa .encontrar {
     padding: 10px;
-    color: #97a9dd; }
+    color: #4043a1;
+    font-weight: bold; }
   footer .footerMapa .mapaDelFooter {
     width: 400px;
     height: 300px; }
@@ -413,6 +469,8 @@ footer {
       height: 20px; }
   footer .derechos {
     padding: 20px; }
+    footer .derechos .derechosTitle {
+      color: #120907; }
 
 /* Comienzo de mediaqueries
 smart phones 320-480 | 480-320
@@ -436,9 +494,18 @@ desktop 1680-1050
     flex-direction: column; } }
 
 @media only screen and (max-width: 991px) {
-  .navHamburguesa {
-    background-color: white;
-    border-radius: 2%; } }
+  nav {
+    background-color: transparent; }
+    nav .botonHamburguesa {
+      background-color: #252034;
+      border-color: #d7dced;
+      margin-left: auto; }
+      nav .botonHamburguesa .botonHamburguesaInterior {
+        background-color: #d7dced; }
+    nav .navHamburguesa {
+      background-color: #252034;
+      border-radius: 3%;
+      border: 2px solid #d7dced; } }
 
 @media only screen and (min-width: 769px) {
   .footerMapa {
