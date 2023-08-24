@@ -497,9 +497,10 @@ desktop 1680-1050
   nav {
     background-color: transparent; }
     nav .botonHamburguesa {
-      background-color: #252034;
+      background-color: #d7dced;
       border-color: #d7dced;
-      margin-left: auto; }
+      margin-left: auto;
+      border: 2px solid #252034; }
       nav .botonHamburguesa .botonHamburguesaInterior {
         background-color: #d7dced; }
     nav .navHamburguesa {

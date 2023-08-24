@@ -32,9 +32,10 @@ desktop 1680-1050
     nav{
         background-color: transparent;
         .botonHamburguesa{
-            background-color: $color2;
+            background-color: $color5;
             border-color: $color5;
             margin-left: auto;
+            border: 2px solid $color2;
             .botonHamburguesaInterior{
                 background-color: $color5;
             }
