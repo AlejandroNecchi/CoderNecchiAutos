@@ -562,3 +562,8 @@ desktop 1680-1050
     height: 250px; }
   .derechosTitle {
     font-size: 1rem; } }
+
+@media only screen and (max-width: 450px) {
+  .footerMapa .MapaYTexto .mapaDelFooter {
+    width: 300px;
+    height: 200px; } }
