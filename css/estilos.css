@@ -82,17 +82,8 @@ nav {
           border-radius: 10px;
           opacity: 1; }
 
-.buscadorMenu {
-  border-radius: 7.5px;
-  width: 90%;
-  height: 40px;
-  margin: 0 auto;
-  background-color: #bababa; }
-  .buscadorMenu .buscador {
-    margin: 40px; }
-
 .autosIndex {
-  margin: 10px;
+  margin: 50px 10px 30px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
